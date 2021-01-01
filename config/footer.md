@@ -4,6 +4,9 @@
 ## Related Resources
 
 - [**Best-of lists**](https://github.com/ml-tooling/best-of): Discover other best-of lists with awesome open-source projects on all kinds of topics.
+- [**best-of-ml-python**](https://github.com/ml-tooling/best-of-ml-python): A ranked list of awesome machine learning python libraries.
+- [**awesome-jupyter**](https://github.com/markusschanta/awesome-jupyter): A curated list of awesome Jupyter projects, libraries and resources.
+- [**awesome-jupyterlab**](https://github.com/mauhai/awesome-jupyterlab): A curated list of awesome JupyterLab extensions and resources.
 
 ## Contribution
 
