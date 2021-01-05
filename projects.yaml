@@ -1130,3 +1130,8 @@ projects:
     pypi_id: perspective-python
     npm_id: "@finos/perspective-jupyterlab"
     category: lab-extensions
+  - name: best-of-ml-python - Data Visualization
+    description: Python-based data visualization libraries
+    homepage: https://github.com/ml-tooling/best-of-ml-python#data-visualization
+    resource: True
+    category: widgets
