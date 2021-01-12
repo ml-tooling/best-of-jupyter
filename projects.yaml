@@ -42,11 +42,14 @@ categories:
   - category: "hub-spawners"
     title: "JupyterHub Spawners"
     subtitle: "Spawner modules that start, monitor, and stop single-user notebook servers."
+  - category: "components"
+    title: "Jupyter Components"
+    subtitle: "Core components of the Jupyter architecture."
 
 projects:
   # Notebook Environments
   - name: Jupyter
-    pypi_id: jupyter
+    pypi_id: notebook
     github_id: jupyter/notebook
     conda_id: conda-forge/jupyter
     dockerhub_id: jupyter/datascience-notebook
@@ -774,7 +777,7 @@ projects:
     npm_id: "@jupyterlab/debugger"
     category: lab-extensions
   - name: JupyterLab Kernelspy
-    github_id: vidartf/jupyterlab-kernelspy
+    github_id: jupyterlab-contrib/jupyterlab-kernelspy
     npm_id: jupyterlab-kernelspy
     category: lab-extensions
   - name: JupyterLab Python Files
@@ -927,11 +930,11 @@ projects:
     github_id: aquirdTurtle/Collapsible_Headings
     npm_id: "@aquirdturtle/collapsible_headings"
     category: lab-extensions
-  # Added 2021-01-01
   - name: ipython
     github_id: ipython/ipython
     pypi_id: ipython
     conda_id: conda-forge/ipython
+    category: components
   - name: nikola
     github_id: getnikola/nikola
     category: notebook-sharing
@@ -1135,3 +1138,121 @@ projects:
     homepage: https://github.com/ml-tooling/best-of-ml-python#data-visualization
     resource: True
     category: widgets
+  - name: jupyter-console
+    github_id: jupyter/jupyter_console
+    category: others
+    pypi_id: jupyter-console
+  - name: qtconsole
+    github_id: jupyter/qtconsole
+    category: others
+    conda_id: conda-forge/qtconsole
+    pypi_id: qtconsole
+  - name: jupyter-packaging
+    github_id: jupyter/jupyter-packaging
+    category: components
+    pypi_id: jupyter-packaging
+    conda_id: conda-forge/jupyter-packaging
+  - name: jupyter_server
+    github_id: jupyter-server/jupyter_server
+    category: components
+    pypi_id: jupyter_server
+    conda_id: conda-forge/jupyter_server
+  - name: jupyterlab-flake8
+    github_id: mlshapiro/jupyterlab-flake8
+    category: lab-extensions
+    npm_id: "jupyterlab-flake8"
+  - name: jupyterlab-sparkmonitor
+    github_id: itsjafer/jupyterlab-sparkmonitor
+    category: lab-extensions
+    dockerhub_id: "itsjafer/sparkmonitor"
+    npm_id: "jupyterlab_sparkmonitor"
+    pypi_id: jupyterlab-sparkmonitor
+  - name: jupyterlab-gitplus
+    github_id: ReviewNB/jupyterlab-gitplus
+    category: lab-extensions
+    npm_id: "@reviewnb/jupyterlab_gitplus"
+    pypi_id: jupyterlab_gitplus
+  - name: jupyter-fs
+    github_id: jpmorganchase/jupyter-fs
+    category: lab-extensions
+    pypi_id: jupyter-fs
+  - name: ipylab
+    github_id: jtpio/ipylab
+    category: lab-extensions
+    pypi_id: ipylab
+    conda_id: conda-forge/ipylab
+  - name: nbcelltests
+    github_id: jpmorganchase/nbcelltests
+    category: lab-extensions
+    npm_id: jupyterlab_celltests
+    pypi_id: nbcelltests
+  - name: jupyterlab-theme-solarized-dark
+    github_id: AllanChain/jupyterlab-theme-solarized-dark
+    category: lab-themes
+    npm_id: "jupyterlab-theme-solarized-dark"
+    pypi_id: jupyterlab_theme_solarized_dark
+  - name: jupyterlab-classic
+    github_id: jtpio/jupyterlab-classic
+    category: notebook-environments
+    pypi_id: jupyterlab-classic
+  - name: cdsdashboards
+    github_id: ideonate/cdsdashboards
+    category: notebook-sharing
+    pypi_id: cdsdashboards
+    conda_id: conda-forge/cdsdashboards
+  - name: Jupter-Notebook-REST-API
+    github_id: Invictify/Jupter-Notebook-REST-API
+    category: notebook-tools
+  - name: nbformat
+    github_id: jupyter/nbformat
+    category: notebook-tools
+    pypi_id: nbformat
+    conda_id: conda-forge/nbformat
+  - name: nbclient
+    github_id: jupyter/nbclient
+    category: notebook-tools
+    pypi_id: nbclient
+    conda_id: conda-forge/nbclient
+  - name: itables
+    github_id: mwouts/itables
+    category: widgets
+    pypi_id: itables
+  - name: jdaviz
+    github_id: spacetelescope/jdaviz
+    category: widgets
+    pypi_id: jdaviz
+  - name: ipyregulartable
+    github_id: jpmorganchase/ipyregulartable
+    category: widgets
+    npm_id: "@jupyter-widgets/jupyterlab-manager"
+    pypi_id: ipyregulartable
+  - name: ipydagred3
+    github_id: timkpaine/ipydagred3
+    category: widgets
+    npm_id: "@jupyter-widgets/jupyterlab-manager"
+    pypi_id: ipydagred3
+  - name: ipyannotate
+    github_id: ipyannotate/ipyannotate
+    category: widgets
+    npm_id: ipyannotate
+    pypi_id: ipyannotate
+  - name: ipyvue
+    github_id: mariobuikhuizen/ipyvue
+    category: widgets
+    pypi_id: ipyvue
+    conda_id: conda-forge/ipyvue
+  - name: ipyvuetify
+    github_id: mariobuikhuizen/ipyvuetify
+    category: widgets
+    pypi_id: ipyvuetify
+    conda_id: conda-forge/ipyvuetify
+  - name: ipydatawidgets
+    github_id: vidartf/ipydatawidgets
+    category: widgets
+    pypi_id: ipydatawidgets
+    conda_id: conda-forge/ipydatawidgets
+  - name: ipyscales
+    github_id: vidartf/ipyscales
+    category: widgets
+    pypi_id: ipyscales
+    conda_id: conda-forge/ipyscales
