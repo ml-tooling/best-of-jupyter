@@ -868,11 +868,6 @@ projects:
     pypi_id: jupyterlab_code_formatter
     npm_id: "@ryantam626/jupyterlab_code_formatter"
     category: lab-extensions
-  - name: JupyterLab Templates
-    github_id: timkpaine/jupyterlab_templates
-    pypi_id: jupyterlab_templates
-    npm_id: jupyterlab_templates
-    category: lab-extensions
   - name: JupyterLab Spellchecker
     github_id: ijmbarr/jupyterlab_spellchecker
     npm_id: "@ijmbarr/jupyterlab_spellchecker"
@@ -1081,7 +1076,7 @@ projects:
     github_id: kaggle/docker-python
     category: notebook-environments
     dockerhub_id: kaggle/python
-  - name: jupyterlab_templates
+  - name: JupyterLab Templates
     github_id: jpmorganchase/jupyterlab_templates
     category: lab-extensions
     pypi_id: jupyterlab_templates
