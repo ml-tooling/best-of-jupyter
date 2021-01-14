@@ -631,11 +631,11 @@ projects:
     github_id: OpenGeoscience/geonotebook
     dockerhub_id: geonotebook/geonotebook
     category: widgets
-  - name: paramnb
-    github_id: ioam/paramnb
-    pypi_id: paramnb
-    conda_id: conda-forge/paramnb
-    category: widgets
+  - name: panel
+    github_id: holoviz/panel
+    pypi_id: panel
+    conda_id: conda-forge/panel
+    category: widgets/dashboarding
   - name: Jupyter DataTables
     github_id: CermakM/jupyter-datatables
     pypi_id: jupyter-datatables
