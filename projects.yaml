@@ -1088,8 +1088,10 @@ projects:
     github_id: lgpage/nbtutor
     category: widgets
     conda_id: conda-forge/nbtutor
-  - name: bokeh-notebooks
-    github_id: bokeh/bokeh-notebooks
+  - name: bokeh
+    github_id: bokeh/bokeh
+    pypi_id: bokeh
+    conda_id: conda-forge/bokeh
     category: widgets
   - name: jupyterlab-celltags
     github_id: jupyterlab/jupyterlab-celltags
