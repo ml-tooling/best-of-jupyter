@@ -1253,3 +1253,6 @@ projects:
     category: widgets
     pypi_id: ipyscales
     conda_id: conda-forge/ipyscales
+  - name: VSCode Jupyter
+    github_id: microsoft/vscode-jupyter
+    category: notebook-environments
