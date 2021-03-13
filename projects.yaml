@@ -1259,3 +1259,6 @@ projects:
     github_id: man-group/dtale
     category: widgets
     conda_id: conda-forge/dtale
+  - name: VSCode Jupyter
+    github_id: microsoft/vscode-jupyter
+    category: notebook-environments
