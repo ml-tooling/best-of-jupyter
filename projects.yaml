@@ -1253,6 +1253,12 @@ projects:
     category: widgets
     pypi_id: ipyscales
     conda_id: conda-forge/ipyscales
+  - name: D-Tale
+    description: "Visualizer for Pandas Data Structures" 
+    pypi_id: dtale
+    github_id: man-group/dtale
+    category: widgets
+    conda_id: conda-forge/dtale
   - name: VSCode Jupyter
     github_id: microsoft/vscode-jupyter
     category: notebook-environments
