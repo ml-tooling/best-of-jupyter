@@ -1262,3 +1262,9 @@ projects:
   - name: VSCode Jupyter
     github_id: microsoft/vscode-jupyter
     category: notebook-environments
+  - name: jupyterlab-executor
+    description: "JupyterLab extension to execute the scripts from the file browser"
+    github_id: gavincyi/jupyterlab-executor
+    category: lab-extensions
+    pypi_id: jupyterlab-executor
+    npm_id: "@gavincyi/jupyterlab-executor"    
