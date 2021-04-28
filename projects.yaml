@@ -523,6 +523,12 @@ projects:
     github_id: DGothrek/ipyaggrid
     npm_id: ipyaggrid
     category: widgets
+  - name: lux
+    pypi_id: lux-api
+    npm_id: luxwidget
+    github_id: lux-org/lux
+    conda_id: conda-forge/lux-api
+    category: widgets
   - name: jupyter-matplotlib
     pypi_id: ipympl
     github_id: matplotlib/ipympl
