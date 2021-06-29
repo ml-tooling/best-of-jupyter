@@ -162,7 +162,7 @@ projects:
     pypi_id: jhub_cas_authenticator
     category: hub-auth
   - name: Remote Authenticator
-    github_id: rasmunk/jhub-authenticators
+    github_id: ucphhpc/jhub-authenticators
     pypi_id: jhub-authenticators
     category: hub-auth
   - name: Null Authenticator
@@ -415,7 +415,7 @@ projects:
     pypi_id: sas_kernel
     category: kernels
   - name: Spylon Kernel
-    github_id: Valassis-Digital-Media/spylon-kernel
+    github_id: vericast/spylon-kernel
     pypi_id: spylon-kernel
     conda_id: conda-forge/spylon-kernel
     category: kernels
@@ -641,7 +641,7 @@ projects:
     github_id: holoviz/panel
     pypi_id: panel
     conda_id: conda-forge/panel
-    category: widgets/dashboarding
+    category: widgets
   - name: Jupyter DataTables
     github_id: CermakM/jupyter-datatables
     pypi_id: jupyter-datatables
@@ -875,8 +875,10 @@ projects:
     npm_id: "@ryantam626/jupyterlab_code_formatter"
     category: lab-extensions
   - name: JupyterLab Spellchecker
-    github_id: ijmbarr/jupyterlab_spellchecker
+    github_id: jupyterlab-contrib/spellchecker
     npm_id: "@ijmbarr/jupyterlab_spellchecker"
+    pypi_id: jupyterlab-spellchecker
+    conda_id: conda-forge/jupyterlab-spellchecker
     category: lab-extensions
   - name: Lantern
     github_id: timkpaine/lantern
@@ -962,7 +964,7 @@ projects:
     pypi_id: elyra
     conda_id: conda-forge/elyra
   - name: ipycytoscape
-    github_id: QuantStack/ipycytoscape
+    github_id: cytoscape/ipycytoscape
     category: widgets
     conda_id: conda-forge/ipycytoscape
   - name: pyforest
@@ -1194,10 +1196,11 @@ projects:
     category: lab-themes
     npm_id: "jupyterlab-theme-solarized-dark"
     pypi_id: jupyterlab_theme_solarized_dark
-  - name: jupyterlab-classic
-    github_id: jtpio/jupyterlab-classic
+  - name: retrolab
+    github_id: jupyterlab/retrolab
     category: notebook-environments
-    pypi_id: jupyterlab-classic
+    pypi_id: retrolab
+    conda_id: conda-forge/retrolab
   - name: cdsdashboards
     github_id: ideonate/cdsdashboards
     category: notebook-sharing
@@ -1274,3 +1277,54 @@ projects:
     category: lab-extensions
     pypi_id: jupyterlab-executor
     npm_id: "@gavincyi/jupyterlab-executor"    
+  - name: jupyterlab-interactive-dashboard-editor
+    github_id: jupytercalpoly/jupyterlab-interactive-dashboard-editor
+    category: lab-extensions
+    pypi_id: jupyterlab-interactive-dashboard-editor
+  - name: jupyter-tabnine
+    github_id: codota/jupyter-tabnine
+    category: jupyter-extensions
+    pypi_id: jupyter-tabnine
+  - name: xeus-python
+    github_id: jupyter-xeus/xeus-python
+    category: kernels
+    conda_id: conda-forge/xeus-python
+    pypi_id: xeus-python
+  - name: allthekernels
+    github_id: minrk/allthekernels
+    category: kernels
+    conda_id: conda-forge/allthekernels
+    pypi_id: allthekernels
+  - name: jupyterlab-tabular-data-editor
+    github_id: jupytercalpoly/jupyterlab-tabular-data-editor
+    category: lab-renderer
+    pypi_id: jupyterlab-tabular-data-editor
+  - name: jupyterlab_darkside_ui
+    github_id: dunovank/jupyterlab_darkside_ui
+    category: lab-themes
+    pypi_id: jupyterlab_darkside_ui
+  - name: ipycache
+    github_id: rossant/ipycache
+    category: magic
+    conda_id: conda-forge/ipycache
+    pypi_id: ipycache
+  - name: jupyterlite
+    github_id: jtpio/jupyterlite
+    category: notebook-environments
+  - name: mknotebooks
+    github_id: greenape/mknotebooks
+    category: notebook-sharing
+    pypi_id: mknotebooks
+  - name: responsible-ai-widgets
+    github_id: microsoft/responsible-ai-widgets
+    category: widgets
+    pypi_id: raiwidgets
+  - name: nglview
+    github_id: nglviewer/nglview
+    category: widgets
+    conda_id: conda-forge/nglview
+    pypi_id: nglview
+  - name: pigeon
+    github_id: agermanidis/pigeon
+    category: widgets
+    pypi_id: pigeon-jupyter
