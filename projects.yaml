@@ -1328,3 +1328,7 @@ projects:
     github_id: agermanidis/pigeon
     category: widgets
     pypi_id: pigeon-jupyter
+  - name: dtale
+    github_id: man-group/dtale
+    category: jupyter-extensions
+    pypi_id: dtale
