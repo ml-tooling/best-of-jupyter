@@ -47,7 +47,6 @@ categories:
     subtitle: "Core components of the Jupyter architecture."
 
 projects:
-  # Notebook Environments
   - name: Jupyter
     pypi_id: notebook
     github_id: jupyter/notebook
@@ -57,39 +56,40 @@ projects:
   - name: JupyterHub
     pypi_id: jupyterhub
     github_id: jupyterhub/jupyterhub
-    dockerhub_id: jupyterhub/jupyterhub
     conda_id: conda-forge/jupyterhub
+    dockerhub_id: jupyterhub/jupyterhub
     category: notebook-environments
   - name: JupyterLab
     pypi_id: jupyterlab
     github_id: jupyterlab/jupyterlab
     conda_id: conda-forge/jupyterlab
     category: notebook-environments
+    npm_id: '@jupyterlab/ui-components'
   - name: ML Workspace
-    dockerhub_id: mltooling/ml-workspace
     github_id: ml-tooling/ml-workspace
+    dockerhub_id: mltooling/ml-workspace
     category: notebook-environments
   - name: nteract
-    github_id: nteract/nteract
     pypi_id: nteract_on_jupyter
+    github_id: nteract/nteract
     category: notebook-environments
+    npm_id: '@nteract/messaging'
   - name: Hydrogen
     github_id: nteract/hydrogen
     category: notebook-environments
   - name: Docker Stacks
     github_id: jupyter/docker-stacks
     dockerhub_id: jupyter/scipy-notebook
-    license: BSD-3-Clause
     category: notebook-environments
+    license: BSD-3-Clause
   - name: DataLab
-    github_id: googledatalab/datalab
     pypi_id: datalab
+    github_id: googledatalab/datalab
     category: notebook-environments
   - name: ML Hub
     github_id: ml-tooling/ml-hub
     dockerhub_id: mltooling/ml-hub
     category: notebook-environments
-  # JupyterHub Spawners
   - name: BatchSpawner
     pypi_id: batchspawner
     github_id: jupyterhub/batchspawner
@@ -102,6 +102,7 @@ projects:
   - name: KubeSpawner
     pypi_id: jupyterhub-kubespawner
     github_id: jupyterhub/kubespawner
+    conda_id: conda-forge/jupyterhub-kubespawner
     category: hub-spawners
   - name: FargateSpawner
     pypi_id: fargatespawner
@@ -110,6 +111,7 @@ projects:
   - name: SystemdSpawner
     pypi_id: jupyterhub-systemdspawner
     github_id: jupyterhub/systemdspawner
+    conda_id: conda-forge/jupyterhub-systemdspawner
     category: hub-spawners
   - name: SudoSpawner
     pypi_id: sudospawner
@@ -123,83 +125,82 @@ projects:
   - name: WrapSpawner
     github_id: jupyterhub/wrapspawner
     category: hub-spawners
-  # JupyterHub Authenticators
   - name: OAuthenticator
+    pypi_id: oauthenticator
     github_id: jupyterhub/oauthenticator
     conda_id: conda-forge/oauthenticator
-    pypi_id: oauthenticator
     category: hub-auth
   - name: LDAP Authenticator
-    github_id: jupyterhub/ldapauthenticator
     pypi_id: jupyterhub-ldapauthenticator
+    github_id: jupyterhub/ldapauthenticator
     conda_id: conda-forge/jupyterhub-ldapauthenticator
     category: hub-auth
   - name: JWT Authenticator
-    github_id: mogthesprog/jwtauthenticator
     pypi_id: jupyterhub-jwtauthenticator
+    github_id: mogthesprog/jwtauthenticator
     category: hub-auth
   - name: Native Authenticator
-    github_id: jupyterhub/nativeauthenticator
     pypi_id: jupyterhub-nativeauthenticator
+    github_id: jupyterhub/nativeauthenticator
     category: hub-auth
   - name: Keberos Authenticator
-    github_id: jupyterhub/kerberosauthenticator
     pypi_id: jupyterhub-kerberosauthenticator
+    github_id: jupyterhub/kerberosauthenticator
     category: hub-auth
   - name: LTI Authenticator
-    github_id: jupyterhub/ltiauthenticator
     pypi_id: jupyterhub-ltiauthenticator
+    github_id: jupyterhub/ltiauthenticator
     category: hub-auth
   - name: SSH Authenticator
     github_id: andreas-h/sshauthenticator
     category: hub-auth
   - name: SAML Authenticator
-    github_id: HewlettPackard/jupyterhub-samlauthenticator
     pypi_id: jupyterhub-samlauthenticator
+    github_id: HewlettPackard/jupyterhub-samlauthenticator
     category: hub-auth
   - name: CAS Authenticator
-    github_id: cwaldbieser/jhub_cas_authenticator
     pypi_id: jhub_cas_authenticator
+    github_id: cwaldbieser/jhub_cas_authenticator
     category: hub-auth
   - name: Remote Authenticator
-    github_id: ucphhpc/jhub-authenticators
     pypi_id: jhub-authenticators
+    github_id: ucphhpc/jhub-authenticators
     category: hub-auth
   - name: Null Authenticator
-    github_id: jupyterhub/nullauthenticator
     pypi_id: nullauthenticator
+    github_id: jupyterhub/nullauthenticator
     category: hub-auth
   - name: First Use Authenticator
-    github_id: jupyterhub/firstuseauthenticator
     pypi_id: jupyterhub-firstuseauthenticator
+    github_id: jupyterhub/firstuseauthenticator
     category: hub-auth
-  # Notebook Sharing & Conversion
   - name: Voila
     pypi_id: voila
     github_id: voila-dashboards/voila
     conda_id: conda-forge/voila
-    npm_id: "@jupyter-voila/jupyterlab-preview"
     category: notebook-sharing
+    npm_id: '@jupyter-voila/jupyterlab-preview'
   - name: nbviewer
     github_id: jupyter/nbviewer
     dockerhub_id: jupyter/nbviewer
-    license: BSD-3-Clause
     category: notebook-sharing
+    license: BSD-3-Clause
   - name: commuter
     github_id: nteract/commuter
-    npm_id: "@nteract/commuter"
     category: notebook-sharing
+    npm_id: '@nteract/commuter'
   - name: BinderHub
+    pypi_id: binderhub
     github_id: jupyterhub/binderhub
-    pypi: binderhub
     category: notebook-sharing
+    pypi: binderhub
   - name: nbgallery
     github_id: nbgallery/nbgallery
     dockerhub_id: nbgallery/nbgallery
     category: notebook-sharing
   - name: Knowledge Repo
-    github_id: airbnb/knowledge-repo
     pypi_id: knowledge-repo
+    github_id: airbnb/knowledge-repo
     category: notebook-sharing
   - name: nbconvert
     pypi_id: nbconvert
@@ -210,62 +211,67 @@ projects:
     pypi_id: nbinteract
     github_id: SamLau95/nbinteract
     category: notebook-sharing
+    npm_id: nbinteract
   - name: RISE
     pypi_id: RISE
     github_id: damianavila/RISE
     conda_id: conda-forge/rise
     category: notebook-sharing
+    npm_id: rise-reveal
   - name: Jupytext
     pypi_id: jupytext
     github_id: mwouts/jupytext
-    npm_id: jupyterlab-jupytext
     conda_id: conda-forge/jupytext
     category: notebook-sharing
+    npm_id: jupyterlab-jupytext
   - name: nbdime
     pypi_id: nbdime
     github_id: jupyter/nbdime
-    npm_id: nbdime-jupyterlab
     conda_id: conda-forge/nbdime
     category: notebook-sharing
+    npm_id: nbdime-jupyterlab
   - name: Jupyter Book
     pypi_id: jupyter-book
     github_id: executablebooks/jupyter-book
+    conda_id: conda-forge/jupyter-book
     category: notebook-sharing
   - name: Stencila
     github_id: stencila/stencila
-    npm_id: stencila
     dockerhub_id: stencila/cloud
     category: notebook-sharing
+    npm_id: stencila
   - name: ThebeLab
     github_id: executablebooks/thebe
     category: notebook-sharing
+    npm_id: thebe
   - name: scrapbook
-    github_id: nteract/scrapbook
     pypi_id: nteract-scrapbook
+    github_id: nteract/scrapbook
+    conda_id: conda-forge/nteract-scrapbook
     category: notebook-sharing
-  # Jupyter Magic
   - name: heat
-    github_id: csurfer/pyheatmagic
     pypi_id: py-heat-magic
+    github_id: csurfer/pyheatmagic
     category: magic
   - name: SQLCell
-    github_id: tmthyjames/SQLCell
     pypi_id: sqlcell
+    github_id: tmthyjames/SQLCell
     category: magic
   - name: blackcellmagic
-    github_id: csurfer/blackcellmagic
     pypi_id: blackcellmagic
+    github_id: csurfer/blackcellmagic
+    conda_id: conda-forge/blackcellmagic
     category: magic
   - name: jupyter-notify
-    github_id: ShopRunner/jupyter-notify
     pypi_id: jupyternotify
+    github_id: ShopRunner/jupyter-notify
     category: magic
   - name: watermark
     pypi_id: watermark
     github_id: rasbt/watermark
     conda_id: conda-forge/watermark
-    license: BSD-3-Clause
     category: magic
+    license: BSD-3-Clause
   - name: py_d3
     pypi_id: py_d3
     github_id: ResidentMario/py_d3
@@ -280,23 +286,18 @@ projects:
     github_id: catherinedevlin/ipython-sql
     conda_id: conda-forge/ipython-sql
     category: magic
-  - name: nb_black
-    pypi_id: nb_black
-    conda_id: conda-forge/nb_black
-    category: magic
-  # Jupyter Kernels
   - name: Metakernel
-    github_id: Calysto/metakernel
     pypi_id: metakernel
+    github_id: Calysto/metakernel
     conda_id: conda-forge/metakernel
     category: kernels
   - name: IRkernel
     github_id: IRkernel/IRkernel
-    cran_id: IRkernel
-    dockerhub_id: jupyter/r-notebook
     conda_id: r/r-irkernel
-    license: MIT
+    dockerhub_id: jupyter/r-notebook
     category: kernels
+    license: MIT
+    cran_id: IRkernel
   - name: almond
     github_id: almond-sh/almond
     dockerhub_id: almondsh/almond
@@ -311,16 +312,18 @@ projects:
   - name: IElixir
     github_id: pprzetacznik/IElixir
     dockerhub_id: pprzetacznik/ielixir
-    hex_id: ielixir
     category: kernels
+    npm_id: jupyterlab-ielixir
+    hex_id: ielixir
   - name: gophernotes
     github_id: gopherdata/gophernotes
     dockerhub_id: gopherdata/gophernotes
-    go_id: github.com/gopherdata/gophernotes
     category: kernels
+    go_id: github.com/gopherdata/gophernotes
   - name: Bash Kernel
-    github_id: takluyver/bash_kernel
     pypi_id: bash_kernel
+    github_id: takluyver/bash_kernel
+    conda_id: conda-forge/bash_kernel
     category: kernels
   - name: clojupyter
     github_id: clojupyter/clojupyter
@@ -332,62 +335,66 @@ projects:
     category: kernels
   - name: IHaskell
     github_id: gibiansky/IHaskell
+    category: kernels
     npm_id: ihaskell_jupyterlab
-    category: kernels
   - name: Apache Toree
-    github_id: apache/incubator-toree
     pypi_id: toree
-    description: "Jupyter kernel for Apache Spark."
+    github_id: apache/incubator-toree
     category: kernels
+    description: Jupyter kernel for Apache Spark.
   - name: lgo
     github_id: yunabe/lgo
     category: kernels
   - name: IJavascript
     github_id: n-riesco/ijavascript
-    npm_id: ijavascript
     category: kernels
+    npm_id: ijavascript
   - name: IPython Kernel
-    github_id: ipython/ipykernel
     pypi_id: ipykernel
+    github_id: ipython/ipykernel
     conda_id: ipykernel
     category: kernels
   - name: Wolfram Kernel
     github_id: WolframResearch/WolframLanguageForJupyter
     category: kernels
   - name: Matlab Kernel
-    github_id: calysto/matlab_kernel
     pypi_id: matlab_kernel
+    github_id: calysto/matlab_kernel
+    conda_id: conda-forge/matlab_kernel
     category: kernels
   - name: SSH Kernel
-    github_id: NII-cloud-operation/sshkernel
     pypi_id: sshkernel
+    github_id: NII-cloud-operation/sshkernel
     category: kernels
   - name: Kernel Gateway
     pypi_id: jupyter-kernel-gateway
     github_id: jupyter/kernel_gateway
+    conda_id: conda-forge/jupyter_kernel_gateway
     category: kernels
   - name: remote_ikernel
-    github_id: tdaff/remote_ikernel
     pypi_id: remote_ikernel
-    bitbucket_id: tdaff/remote_ikernel
+    github_id: tdaff/remote_ikernel
     category: kernels
+    bitbucket_id: tdaff/remote_ikernel
   - name: Enterprise Gateway
-    github_id: jupyter/enterprise_gateway
     pypi_id: jupyter_enterprise_gateway
+    github_id: jupyter/enterprise_gateway
+    conda_id: conda-forge/jupyter_enterprise_gateway
     category: kernels
   - name: Ansible Kernel
-    github_id: ansible/ansible-jupyter-kernel
     pypi_id: ansible-kernel
-    dockerhub_id: benthomasson/ansible-jupyter-kernel
+    github_id: ansible/ansible-jupyter-kernel
     conda_id: conda-forge/ansible-kernel
+    dockerhub_id: benthomasson/ansible-jupyter-kernel
     category: kernels
   - name: F# Kernel
     github_id: fsprojects/IfSharp
     dockerhub_id: fsprojects/ifsharp
     category: kernels
   - name: Octave Kernel
-    github_id: calysto/octave_kernel
     pypi_id: octave_kernel
+    github_id: calysto/octave_kernel
+    conda_id: conda-forge/octave_kernel
     category: kernels
   - name: OCaml Kernel
     github_id: akabe/ocaml-jupyter
@@ -395,15 +402,15 @@ projects:
   - name: IRuby
     github_id: SciRuby/iruby
     dockerhub_id: rubydata/datascience-notebook
-    gem_id: iruby
     category: kernels
+    gem_id: iruby
   - name: ICSharp
     github_id: zabirauf/icsharp
-    license: Apache-2.0
     category: kernels
+    license: Apache-2.0
   - name: LFortran
-    github_id: lfortran/lfortran
     pypi_id: lfortran
+    github_id: lfortran/lfortran
     conda_id: conda-forge/lfortran
     category: kernels
   - name: SciJava Kernel
@@ -411,19 +418,19 @@ projects:
     conda_id: conda-forge/scijava-jupyter-kernel
     category: kernels
   - name: SAS Kernel
-    github_id: sassoftware/sas_kernel
     pypi_id: sas_kernel
+    github_id: sassoftware/sas_kernel
+    conda_id: anaconda/sas_kernel
     category: kernels
   - name: Spylon Kernel
-    github_id: vericast/spylon-kernel
     pypi_id: spylon-kernel
+    github_id: vericast/spylon-kernel
     conda_id: conda-forge/spylon-kernel
     category: kernels
   - name: Kernel Management
     pypi_id: jupyter-kernel-mgmt
     github_id: takluyver/jupyter_kernel_mgmt
     category: notebook-tools
-  # Notebook Tools
   - name: nbdev
     pypi_id: nbdev
     github_id: fastai/nbdev
@@ -431,13 +438,14 @@ projects:
   - name: BeakerX
     pypi_id: beakerx
     github_id: twosigma/beakerx
-    npm_id: beakerx
-    dockerhub_id: beakerx/beakerx
     conda_id: conda-forge/beakerx
+    dockerhub_id: beakerx/beakerx
     category: notebook-tools
+    npm_id: beakerx
   - name: treon
     pypi_id: treon
     github_id: ReviewNB/treon
+    conda_id: conda-forge/treon
     category: notebook-tools
   - name: PixieDust
     pypi_id: pixiedust
@@ -447,6 +455,7 @@ projects:
   - name: Jupyter Sphinx
     pypi_id: jupyter_sphinx
     github_id: jupyter/jupyter-sphinx
+    conda_id: conda-forge/jupyter_sphinx
     category: notebook-tools
   - name: repo2docker
     pypi_id: jupyter-repo2docker
@@ -476,20 +485,20 @@ projects:
     github_id: datitran/jupyter2slides
     category: notebook-tools
   - name: Jupyter Client
-    github_id: jupyter/jupyter_client
     pypi_id: jupyter-client
-    license: BSD-3-Clause
+    github_id: jupyter/jupyter_client
+    conda_id: conda-forge/jupyter_client
     category: notebook-tools
+    license: BSD-3-Clause
   - name: Jupyter Helpers
-    github_id: krassowski/jupyter-helpers
     pypi_id: jupyter_helpers
+    github_id: krassowski/jupyter-helpers
     category: notebook-tools
   - name: ipyparallel
     pypi_id: ipyparallel
     github_id: ipython/ipyparallel
     conda_id: conda-forge/ipyparallel
     category: notebook-tools
-  # Interactive Widgets & Visualization
   - name: pandas-profiling
     pypi_id: pandas-profiling
     github_id: pandas-profiling/pandas-profiling
@@ -502,6 +511,7 @@ projects:
   - name: pivottablejs
     pypi_id: pivottablejs
     github_id: nicolaskruchten/jupyter_pivottablejs
+    conda_id: anaconda/pivottablejs
     category: widgets
   - name: Vision UI
     github_id: asvcode/Vision_UI
@@ -510,102 +520,104 @@ projects:
     pypi_id: ipywidgets
     github_id: jupyter-widgets/ipywidgets
     conda_id: conda-forge/ipywidgets
-    npm_id: "@jupyter-widgets/jupyterlab-manager"
     category: widgets
+    npm_id: '@jupyter-widgets/jupyterlab-manager'
   - name: qgrid
     pypi_id: qgrid
-    npm_id: qgrid
     github_id: quantopian/qgrid
     conda_id: conda-forge/qgrid
     category: widgets
+    npm_id: qgrid
   - name: ipyaggrid
     pypi_id: ipyaggrid
     github_id: DGothrek/ipyaggrid
-    npm_id: ipyaggrid
     category: widgets
+    npm_id: ipyaggrid
   - name: lux
     pypi_id: lux-api
-    npm_id: luxwidget
     github_id: lux-org/lux
     conda_id: conda-forge/lux-api
     category: widgets
+    npm_id: luxwidget
   - name: jupyter-matplotlib
     pypi_id: ipympl
     github_id: matplotlib/ipympl
-    npm_id: jupyter-matplotlib
+    conda_id: conda-forge/ipympl
     category: widgets
+    npm_id: jupyter-matplotlib
   - name: ipysheet
     pypi_id: ipysheet
     github_id: QuantStack/ipysheet
-    npm_id: ipysheet
     conda_id: conda-forge/ipysheet
     category: widgets
+    npm_id: ipysheet
   - name: papermill
     pypi_id: papermill
     github_id: nteract/papermill
     conda_id: conda-forge/papermill
     category: widgets
   - name: ipysigma
-    github_id: Yomguithereal/ipysigma
-    npm_id: ipysigma
     pypi_id: ipysigma
+    github_id: Yomguithereal/ipysigma
     category: widgets
+    npm_id: ipysigma
   - name: ipymaterialui
-    github_id: maartenbreddels/ipymaterialui
-    npm_id: jupyter-materialui
     pypi_id: ipymaterialui
+    github_id: maartenbreddels/ipymaterialui
     category: widgets
+    npm_id: jupyter-materialui
   - name: tributary
-    github_id: timkpaine/tributary
     pypi_id: tributary
+    github_id: timkpaine/tributary
     conda_id: conda-forge/tributary
     category: widgets
   - name: ipywebrtc
-    github_id: maartenbreddels/ipywebrtc
     pypi_id: ipywebrtc
-    npm_id: jupyter-webrtc
+    github_id: maartenbreddels/ipywebrtc
     conda_id: conda-forge/ipywebrtc
     category: widgets
+    npm_id: jupyter-webrtc
   - name: ipyvolume
     pypi_id: ipyvolume
     github_id: maartenbreddels/ipyvolume
     conda_id: conda-forge/ipyvolume
-    npm_id: ipyvolume
     category: widgets
+    npm_id: ipyvolume
   - name: bqplot
     pypi_id: bqplot
     github_id: bqplot/bqplot
-    npm_id: bqplot
     conda_id: conda-forge/bqplot
     category: widgets
+    npm_id: bqplot
   - name: pythreejs
     pypi_id: pythreejs
     github_id: jupyter-widgets/pythreejs
     conda_id: conda-forge/pythreejs
-    npm_id: jupyter-threejs
     category: widgets
+    npm_id: jupyter-threejs
   - name: itkwidgets
     pypi_id: itkwidgets
     github_id: InsightSoftwareConsortium/itkwidgets
-    npm_id: itkwidgets
+    conda_id: conda-forge/itkwidgets
     category: widgets
+    npm_id: itkwidgets
   - name: Mapbox GL
-    github_id: mapbox/mapboxgl-jupyter
     pypi_id: mapboxgl
+    github_id: mapbox/mapboxgl-jupyter
     category: widgets
   - name: ipyleaflet
     pypi_id: ipyleaflet
     github_id: jupyter-widgets/ipyleaflet
     conda_id: conda-forge/ipyleaflet
-    npm_id: jupyter-leaflet
     category: widgets
+    npm_id: jupyter-leaflet
   - name: gmaps
     pypi_id: gmaps
     github_id: pbugnion/gmaps
-    npm_id: jupyter-gmaps
     conda_id: conda-forge/gmaps
-    license: BSD-3-Clause
     category: widgets
+    npm_id: jupyter-gmaps
+    license: BSD-3-Clause
   - name: ipyp5
     pypi_id: ipyp5
     github_id: jtpio/ipyp5
@@ -615,11 +627,12 @@ projects:
     github_id: QuantStack/ipytree
     conda_id: conda-forge/ipytree
     category: widgets
+    npm_id: ipytree
   - name: niwidgets
     pypi_id: niwidgets
     github_id: nipy/niwidgets
-    license: Apache-2.0
     category: widgets
+    license: Apache-2.0
   - name: igv.js widget
     pypi_id: igv-jupyter
     github_id: igvteam/igv-jupyter
@@ -638,27 +651,29 @@ projects:
     dockerhub_id: geonotebook/geonotebook
     category: widgets
   - name: panel
-    github_id: holoviz/panel
     pypi_id: panel
+    github_id: holoviz/panel
     conda_id: conda-forge/panel
     category: widgets
+    npm_id: '@holoviz/panel'
   - name: Jupyter DataTables
-    github_id: CermakM/jupyter-datatables
     pypi_id: jupyter-datatables
+    github_id: CermakM/jupyter-datatables
     category: widgets
   - name: Altair Viewer
-    github_id: altair-viz/altair_viewer
     pypi_id: altair_viewer
+    github_id: altair-viz/altair_viewer
+    conda_id: conda-forge/altair_viewer
     category: widgets
-  # Jupyter Extensions
   - name: HTTP-over-WebSocket
     pypi_id: jupyter_http_over_ws
     github_id: googlecolab/jupyter_http_over_ws
+    conda_id: conda-forge/jupyter_http_over_ws
     category: jupyter-extensions
   - name: Jupyter Black
     github_id: drillan/jupyter-black
-    show: True
     category: jupyter-extensions
+    show: true
   - name: PPExtensions
     pypi_id: ppextensions
     github_id: paypal/PPExtensions
@@ -677,18 +692,22 @@ projects:
     github_id: jupyter-server/jupyter-resource-usage
     conda_id: conda-forge/nbresuse
     category: jupyter-extensions
+    npm_id: '@jupyter-server/resource-usage'
   - name: jupyter-server-proxy
     pypi_id: jupyter-server-proxy
     github_id: jupyterhub/jupyter-server-proxy
     conda_id: conda-forge/jupyter-server-proxy
     category: jupyter-extensions
+    npm_id: '@jupyterlab/server-proxy'
   - name: Contrib NBextensions
     pypi_id: jupyter_contrib_nbextensions
     github_id: ipython-contrib/jupyter_contrib_nbextensions
+    conda_id: conda-forge/jupyter_contrib_nbextensions
     category: jupyter-extensions
   - name: NBextensions Configurator
     pypi_id: jupyter_nbextensions_configurator
     github_id: jupyter-contrib/jupyter_nbextensions_configurator
+    conda_id: conda-forge/jupyter_nbextensions_configurator
     category: jupyter-extensions
   - name: nbgitpuller
     pypi_id: nbgitpuller
@@ -706,341 +725,389 @@ projects:
   - name: Rsession Proxy
     pypi_id: jupyter-rsession-proxy
     github_id: jupyterhub/jupyter-rsession-proxy
+    conda_id: conda-forge/jupyter-rsession-proxy
     category: jupyter-extensions
   - name: Appmode
     pypi_id: appmode
-    conda_id: conda-forge/appmode
     github_id: oschuett/appmode
+    conda_id: conda-forge/appmode
     category: jupyter-extensions
   - name: Spark Monitor
     pypi_id: sparkmonitor
-    dockerhub_id: krishnanr/sparkmonitor
     github_id: krishnan-r/sparkmonitor
+    dockerhub_id: krishnanr/sparkmonitor
     category: jupyter-extensions
-  # JupyterLab Renderer
   - name: JupyterLab Voyager
     github_id: altair-viz/jupyterlab_voyager
-    npm_id: jupyterlab_voyager
     category: lab-renderer
+    npm_id: jupyterlab_voyager
   - name: JupyterLab Spreadsheet
     github_id: quigleyj97/jupyterlab-spreadsheet
-    npm_id: "jupyterlab-spreadsheet"
     category: lab-renderer
+    npm_id: jupyterlab-spreadsheet
   - name: JupyterLab Renderers
+    pypi_id: jupyterlab-katex
     github_id: jupyterlab/jupyter-renderers
-    npm_id: "@jupyterlab/geojson-extension"
+    conda_id: conda-forge/jupyterlab-vega3
     category: lab-renderer
+    npm_id: '@jupyterlab/geojson-extension'
   - name: JupyterLab Latex
-    github_id: jupyterlab/jupyterlab-latex
     pypi_id: jupyterlab_latex
-    npm_id: "@jupyterlab/latex"
+    github_id: jupyterlab/jupyterlab-latex
+    conda_id: conda-forge/jupyterlab-latex
     category: lab-renderer
+    npm_id: '@jupyterlab/latex'
   - name: JupyterLab Chart Editor
     github_id: plotly/jupyterlab-chart-editor
+    category: lab-renderer
     npm_id: jupyterlab-chart-editor
-    category: lab-renderer
   - name: JupyterLab Drawio
+    pypi_id: jupyterlab-drawio
     github_id: QuantStack/jupyterlab-drawio
+    conda_id: conda-forge/jupyterlab-drawio
+    category: lab-renderer
     npm_id: jupyterlab-drawio
-    category: lab-renderer
   - name: JupyterLab Dash
-    github_id: plotly/jupyterlab-dash
     pypi_id: jupyterlab-dash
-    npm_id: jupyterlab-dash
+    github_id: plotly/jupyterlab-dash
     category: lab-renderer
-  # JupyterLab Themes
+    npm_id: jupyterlab-dash
   - name: Material Darker Theme
+    pypi_id: jupyterlab-materialdarker
     github_id: oriolmirosa/jupyterlab_materialdarker
-    npm_id: "@oriolmirosa/jupyterlab_materialdarker"
     category: lab-themes
+    npm_id: '@oriolmirosa/jupyterlab_materialdarker'
   - name: Darcula Theme
+    pypi_id: theme-darcula
     github_id: telamonian/theme-darcula
-    npm_id: "@telamonian/theme-darcula"
+    conda_id: conda-forge/theme-darcula
     category: lab-themes
+    npm_id: '@telamonian/theme-darcula'
   - name: Gruvbox Theme
     github_id: Rahlir/theme-gruvbox
-    npm_id: "@rahlir/theme-gruvbox"
     category: lab-themes
+    npm_id: '@rahlir/theme-gruvbox'
   - name: Neon Theme
     github_id: yeebc/jupyterlab-neon-theme
-    npm_id: "@yeebc/jupyterlab_neon_theme"
     category: lab-themes
+    npm_id: '@yeebc/jupyterlab_neon_theme'
   - name: Nord Theme
     github_id: kenshohara/theme-nord-extension
-    npm_id: "@kenshohara/theme-nord-extension"
     category: lab-themes
+    npm_id: '@kenshohara/theme-nord-extension'
   - name: Horizon Theme
+    pypi_id: jupyterlab-horizon-theme
     github_id: mohirio/jupyterlab-horizon-theme
-    npm_id: "@mohirio/jupyterlab-horizon-theme"
     category: lab-themes
+    npm_id: '@mohirio/jupyterlab-horizon-theme'
   - name: Theme Toggle
     github_id: jtpio/jupyterlab-theme-toggle
-    npm_id: "jupyterlab-theme-toggle"
     category: lab-themes
-  # JupyterLab Extensions
+    npm_id: jupyterlab-theme-toggle
   - name: JupyterLab Debugger
     github_id: jupyterlab/debugger
-    npm_id: "@jupyterlab/debugger"
     category: lab-extensions
+    npm_id: '@jupyterlab/debugger'
   - name: JupyterLab Kernelspy
+    pypi_id: jupyterlab-kernelspy
     github_id: jupyterlab-contrib/jupyterlab-kernelspy
+    conda_id: conda-forge/jupyterlab-kernelspy
+    category: lab-extensions
     npm_id: jupyterlab-kernelspy
-    category: lab-extensions
   - name: JupyterLab Python Files
+    pypi_id: jupyterlab-python-file
     github_id: jtpio/jupyterlab-python-file
-    npm_id: jupyterlab-python-file
+    conda_id: conda-forge/jupyterlab-python-file
     category: lab-extensions
+    npm_id: jupyterlab-python-file
   - name: JupyterLab Shortcutui
     github_id: jupyterlab/jupyterlab-shortcutui
-    npm_id: "@jupyterlab/shortcutui"
     category: lab-extensions
+    npm_id: '@jupyterlab/shortcutui'
   - name: GPU Dashboards
-    github_id: rapidsai/jupyterlab-nvdashboard
     pypi_id: jupyterlab-nvdashboard
+    github_id: rapidsai/jupyterlab-nvdashboard
+    conda_id: conda-forge/jupyterlab-nvdashboard
+    category: lab-extensions
     npm_id: jupyterlab-nvdashboard
-    category: lab-extensions
   - name: JupyterLab System Monitor
+    pypi_id: jupyterlab-system-monitor
     github_id: jtpio/jupyterlab-system-monitor
+    conda_id: conda-forge/jupyterlab-system-monitor
+    category: lab-extensions
     npm_id: jupyterlab-system-monitor
-    category: lab-extensions
   - name: KnowledgeLab
-    github_id: timkpaine/knowledgelab
     pypi_id: knowledgelab
+    github_id: timkpaine/knowledgelab
+    category: lab-extensions
     npm_id: knowledgelab
-    category: lab-extensions
   - name: JupyterLab Autoversion
-    github_id: timkpaine/jupyterlab_autoversion
     pypi_id: jupyterlab_autoversion
+    github_id: timkpaine/jupyterlab_autoversion
+    conda_id: conda-forge/jupyterlab_autoversion
+    category: lab-extensions
     npm_id: jupyterlab_autoversion
-    category: lab-extensions
   - name: JupyterLab Email
-    github_id: timkpaine/jupyterlab_email
     pypi_id: jupyterlab_email
-    npm_id: jupyterlab_email
+    github_id: timkpaine/jupyterlab_email
     category: lab-extensions
+    npm_id: jupyterlab_email
   - name: JupyterLab Bytecode
     github_id: jtpio/jupyterlab-python-bytecode
+    category: lab-extensions
     npm_id: jupyterlab-python-bytecode
-    category: lab-extensions
   - name: JupyterLab Flake8
+    pypi_id: jupyterlab-email
     github_id: timkpaine/jupyterlab_email
+    category: lab-extensions
     npm_id: jupyterlab-flake8
-    category: lab-extensions
   - name: JupyterLab Quickopen
-    github_id: parente/jupyterlab-quickopen
     pypi_id: jupyterlab-quickopen
-    npm_id: "@parente/jupyterlab-quickopen"
+    github_id: parente/jupyterlab-quickopen
     category: lab-extensions
+    npm_id: '@parente/jupyterlab-quickopen'
   - name: JupyterLab Vim
     github_id: jwkvam/jupyterlab-vim
-    npm_id: jupyterlab_vim
     category: lab-extensions
+    npm_id: jupyterlab_vim
   - name: JupyterLab Git
-    github_id: jupyterlab/jupyterlab-git
     pypi_id: jupyterlab-git
+    github_id: jupyterlab/jupyterlab-git
     conda_id: conda-forge/jupyterlab-git
     category: lab-extensions
+    npm_id: '@jupyterlab/git'
   - name: JupyterLab TOC
     github_id: jupyterlab/jupyterlab-toc
-    npm_id: "@jupyterlab/toc"
     category: lab-extensions
+    npm_id: '@jupyterlab/toc'
   - name: Variable Inspector
+    pypi_id: lckr-jupyterlab-variableinspector
     github_id: lckr/jupyterlab-variableInspector
-    npm_id: "@lckr/jupyterlab_variableinspector"
+    conda_id: conda-forge/jupyterlab-variableinspector
     category: lab-extensions
+    npm_id: '@lckr/jupyterlab_variableinspector'
   - name: JupyterLab Google Drive
     github_id: jupyterlab/jupyterlab-google-drive
-    npm_id: "@jupyterlab/google-drive"
     category: lab-extensions
+    npm_id: '@jupyterlab/google-drive'
   - name: JupyterLab SQL
-    github_id: pbugnion/jupyterlab-sql
     pypi_id: jupyterlab_sql
+    github_id: pbugnion/jupyterlab-sql
     category: lab-extensions
+    npm_id: jupyterlab-sql
   - name: JupyterLab Go-To-Definition
     github_id: krassowski/jupyterlab-go-to-definition
-    npm_id: "@krassowski/jupyterlab_go_to_definition"
     category: lab-extensions
+    npm_id: '@krassowski/jupyterlab_go_to_definition'
   - name: JupyterLab Spark
     github_id: manuzhang/jupyterlab_spark
+    category: lab-extensions
     npm_id: jupyterlab_spark
-    category: lab-extensions
   - name: JupyterLab GitHub
-    github_id: jupyterlab/jupyterlab-github
-    npm_id: "@jupyterlab/github"
     pypi_id: jupyterlab-github
+    github_id: jupyterlab/jupyterlab-github
     category: lab-extensions
+    npm_id: '@jupyterlab/github'
   - name: Code Formatter
-    github_id: ryantam626/jupyterlab_code_formatter
     pypi_id: jupyterlab_code_formatter
-    npm_id: "@ryantam626/jupyterlab_code_formatter"
+    github_id: ryantam626/jupyterlab_code_formatter
+    conda_id: conda-forge/jupyterlab_code_formatter
     category: lab-extensions
+    npm_id: '@ryantam626/jupyterlab_code_formatter'
   - name: JupyterLab Spellchecker
-    github_id: jupyterlab-contrib/spellchecker
-    npm_id: "@ijmbarr/jupyterlab_spellchecker"
     pypi_id: jupyterlab-spellchecker
+    github_id: jupyterlab-contrib/spellchecker
     conda_id: conda-forge/jupyterlab-spellchecker
     category: lab-extensions
+    npm_id: '@ijmbarr/jupyterlab_spellchecker'
   - name: Lantern
-    github_id: timkpaine/lantern
     pypi_id: pylantern
+    github_id: timkpaine/lantern
     category: lab-extensions
   - name: JupyterLab IFrame
-    github_id: timkpaine/jupyterlab_iframe
     pypi_id: jupyterlab_iframe
-    npm_id: jupyterlab_iframe
+    github_id: timkpaine/jupyterlab_iframe
+    conda_id: conda-forge/jupyterlab_iframe
     category: lab-extensions
+    npm_id: jupyterlab_iframe
   - name: JupyterLab Tensorboard
     github_id: chaoleili/jupyterlab_tensorboard
-    npm_id: jupyterlab_tensorboard
     category: lab-extensions
+    npm_id: jupyterlab_tensorboard
   - name: nbgather
     github_id: microsoft/gather
-    npm_id: nbgather
     category: lab-extensions
+    npm_id: nbgather
   - name: JupyterLab Data Explorer
     github_id: jupyterlab/jupyterlab-data-explorer
-    npm_id: "@jupyterlab/dataregistry-extension"
     category: lab-extensions
+    npm_id: '@jupyterlab/dataregistry-extension'
   - name: JupyterLab LSP
-    github_id: krassowski/jupyterlab-lsp
-    npm_id: "@krassowski/jupyterlab-lsp"
+    pypi_id: jupyterlab-lsp
+    github_id: jupyter-lsp/jupyterlab-lsp
+    conda_id: conda-forge/jupyter-lsp
     category: lab-extensions
+    npm_id: '@krassowski/jupyterlab-lsp'
   - name: JupyterLab Top Bar
     github_id: jtpio/jupyterlab-topbar
-    npm_id: "jupyterlab-topbar-extension"
     category: lab-extensions
+    npm_id: jupyterlab-topbar-extension
   - name: Jupyter Bokeh
-    github_id: bokeh/jupyter_bokeh
     pypi_id: jupyter-bokeh
-    npm_id: "@bokeh/jupyter_bokeh"
-    # jupyterlab_bokeh
+    github_id: bokeh/jupyter_bokeh
+    conda_id: conda-forge/jupyter_bokeh
     category: lab-extensions
+    npm_id: '@bokeh/jupyter_bokeh'
   - name: JupyterLab Commenting
+    pypi_id: jupyterlab-commenting-service
     github_id: jupyterlab/jupyterlab-commenting
-    npm_id: "@jupyterlab/commenting-extension"
     category: lab-extensions
+    npm_id: '@jupyterlab/commenting-extension'
   - name: JupyterLab HDF5
-    github_id: jupyterlab/jupyterlab-hdf5
-    npm_id: "@jupyterlab/hdf5"
     pypi_id: jupyterlab_hdf
+    github_id: jupyterlab/jupyterlab-hdf5
     category: lab-extensions
+    npm_id: '@jupyterlab/hdf5'
   - name: JupyterLab SideCar
-    github_id: jupyter-widgets/jupyterlab-sidecar
-    npm_id: "@jupyter-widgets/jupyterlab-sidecar"
     pypi_id: sidecar
+    github_id: jupyter-widgets/jupyterlab-sidecar
+    conda_id: conda-forge/sidecar
     category: lab-extensions
+    npm_id: '@jupyter-widgets/jupyterlab-sidecar'
   - name: Collapsible Headings
+    pypi_id: aquirdturtle-collapsible-headings
     github_id: aquirdTurtle/Collapsible_Headings
-    npm_id: "@aquirdturtle/collapsible_headings"
     category: lab-extensions
+    npm_id: '@aquirdturtle/collapsible_headings'
   - name: ipython
-    github_id: ipython/ipython
     pypi_id: ipython
+    github_id: ipython/ipython
     conda_id: conda-forge/ipython
     category: components
   - name: nikola
+    pypi_id: nikola
     github_id: getnikola/nikola
     category: notebook-sharing
-    pypi_id: nikola
   - name: sos
+    pypi_id: sos-notebook
     github_id: vatlab/SOS
+    conda_id: conda-forge/sos
     category: notebook-environments
   - name: ipycanvas
-    github_id: martinRenou/ipycanvas
-    category: widgets
     pypi_id: ipycanvas
+    github_id: martinRenou/ipycanvas
     conda_id: conda-forge/ipycanvas
-  - name: jupyter-dash
-    github_id: plotly/jupyter-dash
     category: widgets
+    npm_id: ipycanvas
+  - name: jupyter-dash
     pypi_id: jupyter-dash
+    github_id: plotly/jupyter-dash
+    conda_id: conda-forge/jupyter-dash
+    category: widgets
+    npm_id: jupyterlab-dash
   - name: pick
+    pypi_id: pick
     github_id: nteract/pick
     category: magic
-    pypi_id: pick
   - name: elyra
-    github_id: elyra-ai/elyra
-    category: lab-extensions
     pypi_id: elyra
+    github_id: elyra-ai/elyra
     conda_id: conda-forge/elyra
+    category: lab-extensions
+    npm_id: '@elyra/services'
   - name: ipycytoscape
+    pypi_id: ipycytoscape
     github_id: cytoscape/ipycytoscape
-    category: widgets
     conda_id: conda-forge/ipycytoscape
+    category: widgets
+    npm_id: jupyter-cytoscape
   - name: pyforest
+    pypi_id: pyforest
     github_id: 8080labs/pyforest
     category: jupyter-extensions
-    pypi_id: pyforest
   - name: mkdocs-jupyter
-    github_id: danielfrg/mkdocs-jupyter
-    category: notebook-sharing
     pypi_id: mkdocs-jupyter
+    github_id: danielfrg/mkdocs-jupyter
+    conda_id: conda-forge/mkdocs-jupyter
+    category: notebook-sharing
   - name: nbQA
-    github_id: nbQA-dev/nbQA
-    category: notebook-tools
     pypi_id: nbqa
+    github_id: nbQA-dev/nbQA
+    conda_id: conda-forge/nbqa
+    category: notebook-tools
   - name: colabcode
-    github_id: abhishekkrthakur/colabcode
     pypi_id: colabcode
+    github_id: abhishekkrthakur/colabcode
   - name: nb_conda_kernels
     github_id: Anaconda-Platform/nb_conda_kernels
-    category: kernels
     conda_id: conda-forge/nb_conda_kernels
+    category: kernels
     license: BSD-3-Clause
   - name: bookstore
+    pypi_id: bookstore
     github_id: nteract/bookstore
     category: notebook-sharing
-    pypi_id: bookstore
   - name: nbzip
+    pypi_id: nbzip
     github_id: data-8/nbzip
     category: jupyter-extensions
-    pypi_id: nbzip
   - name: nbopen
+    pypi_id: nbopen
     github_id: takluyver/nbopen
     category: notebook-tools
     license: BSD-3-Clause
-    pypi_id: nbopen
   - name: jupyter-archive
+    pypi_id: jupyter-archive
     github_id: jupyterlab-contrib/jupyter-archive
-    category: jupyter-extensions
     conda_id: conda-forge/jupyter-archive
+    category: jupyter-extensions
+    npm_id: '@hadim/jupyter-archive'
   - name: gpu-jupyter
     github_id: iot-salzburg/gpu-jupyter
     category: notebook-environments
   - name: gator
+    pypi_id: mamba-gator
     github_id: mamba-org/gator
     conda_id: conda-forge/mamba_gator
-    npm_id: "@mamba-org/gator-lab"
-    license: BSD-3-Clause
     category: jupyter-extensions
+    npm_id: '@mamba-org/gator-lab'
+    license: BSD-3-Clause
   - name: nb_conda
     github_id: Anaconda-Platform/nb_conda
-    license: BSD-3-Clause
-    category: jupyter-extensions
     conda_id: conda-forge/nb_conda
+    category: jupyter-extensions
+    license: BSD-3-Clause
   - name: jupyter-flex
+    pypi_id: jupyter-flex
     github_id: danielfrg/jupyter-flex
+    conda_id: conda-forge/jupyter-flex
     category: notebook-sharing
+    npm_id: '@danielfrg/jupyter-flex'
   - name: easyexplore
+    pypi_id: easyexplore
     github_id: GianniBalistreri/easyexplore
     category: widgets
-    pypi_id: easyexplore
   - name: xeus-sqlite
     github_id: jupyter-xeus/xeus-sqlite
+    conda_id: conda-forge/xeus-sqlite
     category: kernels
   - name: naas
+    pypi_id: naas
     github_id: jupyter-naas/naas
     category: notebook-tools
-    pypi_id: naas
   - name: testbook
+    pypi_id: nteract-testbook
     github_id: nteract/testbook
+    conda_id: conda-forge/testbook
     category: notebook-tools
   - name: evidently
+    pypi_id: evidently
     github_id: evidentlyai/evidently
+    conda_id: conda-forge/evidently
     category: widgets
   - name: Content Management
-    github_id: jupyter-incubator/contentmanagement
     pypi_id: jupyter_cms
+    github_id: jupyter-incubator/contentmanagement
     conda_id: conda-forge/jupyter_cms
     category: jupyter-extensions
     license: BSD-3-Clause
@@ -1048,287 +1115,326 @@ projects:
     github_id: nteract/kernel-relay
     category: kernels
   - name: jupyterterminals
+    pypi_id: jupyterterminals
     github_id: willkessler/jupyterterminals
     category: jupyter-extensions
   - name: ssh_ipykernel
+    pypi_id: ssh-ipykernel
     github_id: bernhard-42/ssh_ipykernel
     category: kernels
+    npm_id: interrupt-ipykernel-extension
   - name: Kernel Detection
     pypi_id: environment_kernels
     github_id: Cadair/jupyter_environment_kernels
     category: kernels
   - name: dask-labextension
-    github_id: dask/dask-labextension
-    category: lab-extensions
     pypi_id: dask-labextension
+    github_id: dask/dask-labextension
     conda_id: conda-forge/dask-labextension
+    category: lab-extensions
     npm_id: dask-labextension
   - name: jupyterlab-execute-time
+    pypi_id: jupyterlab-execute-time
     github_id: deshaw/jupyterlab-execute-time
+    conda_id: conda-forge/jupyterlab_execute_time
     category: lab-extensions
     npm_id: jupyterlab-execute-time
   - name: jupyterlab-sos
+    pypi_id: jupyterlab-sos
     github_id: vatlab/jupyterlab-sos
-    category: lab-extensions
     conda_id: conda-forge/jupyterlab-sos
+    category: lab-extensions
     npm_id: jupyterlab-sos
   - name: jupyterlab_commands
+    pypi_id: jupyterlab-commands
     github_id: timkpaine/jupyterlab_commands
+    conda_id: conda-forge/jupyterlab_commands
     category: lab-extensions
   - name: notedown
-    github_id: aaren/notedown
-    category: notebook-sharing
     pypi_id: notedown
+    github_id: aaren/notedown
     conda_id: conda-forge/notedown
+    category: notebook-sharing
   - name: docker-python
     github_id: kaggle/docker-python
-    category: notebook-environments
     dockerhub_id: kaggle/python
+    category: notebook-environments
   - name: JupyterLab Templates
-    github_id: jpmorganchase/jupyterlab_templates
-    category: lab-extensions
     pypi_id: jupyterlab_templates
+    github_id: jpmorganchase/jupyterlab_templates
+    conda_id: conda-forge/jupyterlab_templates
+    category: lab-extensions
     npm_id: jupyterlab_templates
   - name: nbmake-action
     github_id: treebeardtech/nbmake-action
     category: notebook-tools
   - name: nbtutor
+    pypi_id: nbtutor
     github_id: lgpage/nbtutor
-    category: widgets
     conda_id: conda-forge/nbtutor
+    category: widgets
   - name: bokeh
-    github_id: bokeh/bokeh
     pypi_id: bokeh
+    github_id: bokeh/bokeh
     conda_id: conda-forge/bokeh
     category: widgets
+    npm_id: '@bokeh/bokehjs'
   - name: jupyterlab-celltags
     github_id: jupyterlab/jupyterlab-celltags
     category: lab-extensions
   - name: pynb
+    pypi_id: pynb
     github_id: elehcimd/pynb
     category: notebook-sharing
   - name: jupyter-nbrequirements
+    pypi_id: jupyter-nbrequirements
     github_id: thoth-station/jupyter-nbrequirements
     category: jupyter-extensions
   - name: jupyter-manim
+    pypi_id: jupyter-manim
     github_id: krassowski/jupyter-manim
     category: magic
   - name: dummyauthenticator
-    github_id: jupyterhub/dummyauthenticator
     pypi_id: jupyterhub-dummyauthenticator
+    github_id: jupyterhub/dummyauthenticator
     category: hub-auth
   - name: Remote User Auth
-    github_id: cwaldbieser/jhub_remote_user_authenticator
     pypi_id: jhub_remote_user_authenticator
+    github_id: cwaldbieser/jhub_remote_user_authenticator
     category: hub-auth
   - name: Hash Authenticator
-    github_id: thedataincubator/jupyterhub-hashauthenticator
     pypi_id: jupyterhub-hashauthenticator
+    github_id: thedataincubator/jupyterhub-hashauthenticator
     category: hub-auth
   - name: jnotebook-reader
     github_id: line/jnotebook_reader
     category: notebook-sharing
   - name: What-If Tool
-    github_id: PAIR-code/what-if-tool
-    npm_id: wit-widget
     pypi_id: witwidget
+    github_id: PAIR-code/what-if-tool
+    conda_id: conda-forge/tensorboard-plugin-wit
     category: widgets
+    npm_id: wit-widget
   - name: Perspective
-    github_id: finos/perspective
     pypi_id: perspective-python
-    npm_id: "@finos/perspective-jupyterlab"
+    github_id: finos/perspective
+    conda_id: conda-forge/perspective
     category: lab-extensions
+    npm_id: '@finos/perspective-jupyterlab'
+  - name: jupyter-console
+    pypi_id: jupyter-console
+    github_id: jupyter/jupyter_console
+    conda_id: conda-forge/jupyter_console
+    category: others
+  - name: qtconsole
+    pypi_id: qtconsole
+    github_id: jupyter/qtconsole
+    conda_id: conda-forge/qtconsole
+    category: others
+  - name: jupyter-packaging
+    pypi_id: jupyter-packaging
+    github_id: jupyter/jupyter-packaging
+    conda_id: conda-forge/jupyter-packaging
+    category: components
+  - name: jupyter_server
+    pypi_id: jupyter_server
+    github_id: jupyter-server/jupyter_server
+    conda_id: conda-forge/jupyter_server
+    category: components
+  - name: jupyterlab-flake8
+    pypi_id: jupyterlab-flake8
+    github_id: mlshapiro/jupyterlab-flake8
+    category: lab-extensions
+    npm_id: jupyterlab-flake8
+  - name: jupyterlab-sparkmonitor
+    pypi_id: jupyterlab-sparkmonitor
+    github_id: itsjafer/jupyterlab-sparkmonitor
+    dockerhub_id: itsjafer/sparkmonitor
+    category: lab-extensions
+    npm_id: jupyterlab_sparkmonitor
+  - name: jupyterlab-gitplus
+    pypi_id: jupyterlab_gitplus
+    github_id: ReviewNB/jupyterlab-gitplus
+    category: lab-extensions
+    npm_id: '@reviewnb/jupyterlab_gitplus'
+  - name: jupyter-fs
+    pypi_id: jupyter-fs
+    github_id: jpmorganchase/jupyter-fs
+    conda_id: conda-forge/jupyter-fs
+    category: lab-extensions
+  - name: ipylab
+    pypi_id: ipylab
+    github_id: jtpio/ipylab
+    conda_id: conda-forge/ipylab
+    category: lab-extensions
+    npm_id: ipylab
+  - name: nbcelltests
+    pypi_id: nbcelltests
+    github_id: jpmorganchase/nbcelltests
+    conda_id: conda-forge/nbcelltests
+    category: lab-extensions
+    npm_id: jupyterlab_celltests
+  - name: jupyterlab-theme-solarized-dark
+    pypi_id: jupyterlab_theme_solarized_dark
+    github_id: AllanChain/jupyterlab-theme-solarized-dark
+    category: lab-themes
+    npm_id: jupyterlab-theme-solarized-dark
+  - name: retrolab
+    pypi_id: retrolab
+    github_id: jupyterlab/retrolab
+    conda_id: conda-forge/retrolab
+    category: notebook-environments
+    npm_id: '@jupyterlab-classic/application'
+  - name: cdsdashboards
+    pypi_id: cdsdashboards
+    github_id: ideonate/cdsdashboards
+    conda_id: conda-forge/cdsdashboards
+    category: notebook-sharing
+  - name: Jupter-Notebook-REST-API
+    github_id: Invictify/Jupter-Notebook-REST-API
+    category: notebook-tools
+  - name: nbformat
+    pypi_id: nbformat
+    github_id: jupyter/nbformat
+    conda_id: conda-forge/nbformat
+    category: notebook-tools
+    npm_id: nbformat-schema
+  - name: nbclient
+    pypi_id: nbclient
+    github_id: jupyter/nbclient
+    conda_id: conda-forge/nbclient
+    category: notebook-tools
+  - name: itables
+    pypi_id: itables
+    github_id: mwouts/itables
+    conda_id: conda-forge/itables
+    category: widgets
+  - name: jdaviz
+    pypi_id: jdaviz
+    github_id: spacetelescope/jdaviz
+    category: widgets
+  - name: ipyregulartable
+    pypi_id: ipyregulartable
+    github_id: jpmorganchase/ipyregulartable
+    conda_id: conda-forge/ipyregulartable
+    category: widgets
+    npm_id: '@jupyter-widgets/jupyterlab-manager'
+  - name: ipydagred3
+    pypi_id: ipydagred3
+    github_id: timkpaine/ipydagred3
+    conda_id: conda-forge/ipydagred3
+    category: widgets
+    npm_id: '@jupyter-widgets/jupyterlab-manager'
+  - name: ipyannotate
+    pypi_id: ipyannotate
+    github_id: ipyannotate/ipyannotate
+    category: widgets
+    npm_id: ipyannotate
+  - name: ipyvue
+    pypi_id: ipyvue
+    github_id: mariobuikhuizen/ipyvue
+    conda_id: conda-forge/ipyvue
+    category: widgets
+    npm_id: jupyter-vue
+  - name: ipyvuetify
+    pypi_id: ipyvuetify
+    github_id: mariobuikhuizen/ipyvuetify
+    conda_id: conda-forge/ipyvuetify
+    category: widgets
+    npm_id: jupyter-vuetify
+  - name: ipydatawidgets
+    pypi_id: ipydatawidgets
+    github_id: vidartf/ipydatawidgets
+    conda_id: conda-forge/ipydatawidgets
+    category: widgets
+  - name: ipyscales
+    pypi_id: ipyscales
+    github_id: vidartf/ipyscales
+    conda_id: conda-forge/ipyscales
+    category: widgets
+    npm_id: jupyter-scales
+  - name: D-Tale
+    pypi_id: dtale
+    github_id: man-group/dtale
+    conda_id: conda-forge/dtale
+    category: widgets
+    description: Visualizer for Pandas Data Structures
+  - name: VSCode Jupyter
+    github_id: microsoft/vscode-jupyter
+    conda_id: conda-forge/vscode-jupyter
+    category: notebook-environments
+  - name: jupyterlab-executor
+    pypi_id: jupyterlab-executor
+    github_id: gavincyi/jupyterlab-executor
+    category: lab-extensions
+    npm_id: '@gavincyi/jupyterlab-executor'
+    description: JupyterLab extension to execute the scripts from the file browser
+  - name: jupyterlab-interactive-dashboard-editor
+    pypi_id: jupyterlab-interactive-dashboard-editor
+    github_id: jupytercalpoly/jupyterlab-interactive-dashboard-editor
+    conda_id: conda-forge/jupyterlab-interactive-dashboard-editor
+    category: lab-extensions
+    npm_id: jupyterlab-interactive-dashboard-editor
+  - name: jupyter-tabnine
+    pypi_id: jupyter-tabnine
+    github_id: codota/jupyter-tabnine
+    category: jupyter-extensions
+  - name: xeus-python
+    pypi_id: xeus-python
+    github_id: jupyter-xeus/xeus-python
+    conda_id: conda-forge/xeus-python
+    category: kernels
+  - name: allthekernels
+    pypi_id: allthekernels
+    github_id: minrk/allthekernels
+    conda_id: conda-forge/allthekernels
+    category: kernels
+  - name: jupyterlab-tabular-data-editor
+    pypi_id: jupyterlab-tabular-data-editor
+    github_id: jupytercalpoly/jupyterlab-tabular-data-editor
+    category: lab-renderer
+    npm_id: jupyterlab-tabular-data-editor
+  - name: jupyterlab_darkside_ui
+    pypi_id: jupyterlab_darkside_ui
+    github_id: dunovank/jupyterlab_darkside_ui
+    category: lab-themes
+  - name: ipycache
+    pypi_id: ipycache
+    github_id: rossant/ipycache
+    conda_id: conda-forge/ipycache
+    category: magic
+  - name: jupyterlite
+    github_id: jtpio/jupyterlite
+    category: notebook-environments
+  - name: mknotebooks
+    pypi_id: mknotebooks
+    github_id: greenape/mknotebooks
+    category: notebook-sharing
+  - name: responsible-ai-widgets
+    pypi_id: raiwidgets
+    github_id: microsoft/responsible-ai-toolbox
+    category: widgets
+  - name: nglview
+    pypi_id: nglview
+    github_id: nglviewer/nglview
+    conda_id: conda-forge/nglview
+    category: widgets
+    npm_id: nglview-js-widgets
+  - name: pigeon
+    pypi_id: pigeon-jupyter
+    github_id: agermanidis/pigeon
+    category: widgets
+  - name: dtale
+    pypi_id: dtale
+    github_id: man-group/dtale
+    conda_id: conda-forge/dtale
+    category: jupyter-extensions
+  - name: nb_black
+    pypi_id: nb_black
+    conda_id: conda-forge/nb_black
+    category: magic
   - name: best-of-ml-python - Data Visualization
     description: Python-based data visualization libraries
     homepage: https://github.com/ml-tooling/best-of-ml-python#data-visualization
     resource: True
     category: widgets
-  - name: jupyter-console
-    github_id: jupyter/jupyter_console
-    category: others
-    pypi_id: jupyter-console
-  - name: qtconsole
-    github_id: jupyter/qtconsole
-    category: others
-    conda_id: conda-forge/qtconsole
-    pypi_id: qtconsole
-  - name: jupyter-packaging
-    github_id: jupyter/jupyter-packaging
-    category: components
-    pypi_id: jupyter-packaging
-    conda_id: conda-forge/jupyter-packaging
-  - name: jupyter_server
-    github_id: jupyter-server/jupyter_server
-    category: components
-    pypi_id: jupyter_server
-    conda_id: conda-forge/jupyter_server
-  - name: jupyterlab-flake8
-    github_id: mlshapiro/jupyterlab-flake8
-    category: lab-extensions
-    npm_id: "jupyterlab-flake8"
-  - name: jupyterlab-sparkmonitor
-    github_id: itsjafer/jupyterlab-sparkmonitor
-    category: lab-extensions
-    dockerhub_id: "itsjafer/sparkmonitor"
-    npm_id: "jupyterlab_sparkmonitor"
-    pypi_id: jupyterlab-sparkmonitor
-  - name: jupyterlab-gitplus
-    github_id: ReviewNB/jupyterlab-gitplus
-    category: lab-extensions
-    npm_id: "@reviewnb/jupyterlab_gitplus"
-    pypi_id: jupyterlab_gitplus
-  - name: jupyter-fs
-    github_id: jpmorganchase/jupyter-fs
-    category: lab-extensions
-    pypi_id: jupyter-fs
-  - name: ipylab
-    github_id: jtpio/ipylab
-    category: lab-extensions
-    pypi_id: ipylab
-    conda_id: conda-forge/ipylab
-  - name: nbcelltests
-    github_id: jpmorganchase/nbcelltests
-    category: lab-extensions
-    npm_id: jupyterlab_celltests
-    pypi_id: nbcelltests
-  - name: jupyterlab-theme-solarized-dark
-    github_id: AllanChain/jupyterlab-theme-solarized-dark
-    category: lab-themes
-    npm_id: "jupyterlab-theme-solarized-dark"
-    pypi_id: jupyterlab_theme_solarized_dark
-  - name: retrolab
-    github_id: jupyterlab/retrolab
-    category: notebook-environments
-    pypi_id: retrolab
-    conda_id: conda-forge/retrolab
-  - name: cdsdashboards
-    github_id: ideonate/cdsdashboards
-    category: notebook-sharing
-    pypi_id: cdsdashboards
-    conda_id: conda-forge/cdsdashboards
-  - name: Jupter-Notebook-REST-API
-    github_id: Invictify/Jupter-Notebook-REST-API
-    category: notebook-tools
-  - name: nbformat
-    github_id: jupyter/nbformat
-    category: notebook-tools
-    pypi_id: nbformat
-    conda_id: conda-forge/nbformat
-  - name: nbclient
-    github_id: jupyter/nbclient
-    category: notebook-tools
-    pypi_id: nbclient
-    conda_id: conda-forge/nbclient
-  - name: itables
-    github_id: mwouts/itables
-    category: widgets
-    pypi_id: itables
-  - name: jdaviz
-    github_id: spacetelescope/jdaviz
-    category: widgets
-    pypi_id: jdaviz
-  - name: ipyregulartable
-    github_id: jpmorganchase/ipyregulartable
-    category: widgets
-    npm_id: "@jupyter-widgets/jupyterlab-manager"
-    pypi_id: ipyregulartable
-  - name: ipydagred3
-    github_id: timkpaine/ipydagred3
-    category: widgets
-    npm_id: "@jupyter-widgets/jupyterlab-manager"
-    pypi_id: ipydagred3
-  - name: ipyannotate
-    github_id: ipyannotate/ipyannotate
-    category: widgets
-    npm_id: ipyannotate
-    pypi_id: ipyannotate
-  - name: ipyvue
-    github_id: mariobuikhuizen/ipyvue
-    category: widgets
-    pypi_id: ipyvue
-    conda_id: conda-forge/ipyvue
-  - name: ipyvuetify
-    github_id: mariobuikhuizen/ipyvuetify
-    category: widgets
-    pypi_id: ipyvuetify
-    conda_id: conda-forge/ipyvuetify
-  - name: ipydatawidgets
-    github_id: vidartf/ipydatawidgets
-    category: widgets
-    pypi_id: ipydatawidgets
-    conda_id: conda-forge/ipydatawidgets
-  - name: ipyscales
-    github_id: vidartf/ipyscales
-    category: widgets
-    pypi_id: ipyscales
-    conda_id: conda-forge/ipyscales
-  - name: D-Tale
-    description: "Visualizer for Pandas Data Structures" 
-    pypi_id: dtale
-    github_id: man-group/dtale
-    category: widgets
-    conda_id: conda-forge/dtale
-  - name: VSCode Jupyter
-    github_id: microsoft/vscode-jupyter
-    category: notebook-environments
-  - name: jupyterlab-executor
-    description: "JupyterLab extension to execute the scripts from the file browser"
-    github_id: gavincyi/jupyterlab-executor
-    category: lab-extensions
-    pypi_id: jupyterlab-executor
-    npm_id: "@gavincyi/jupyterlab-executor"    
-  - name: jupyterlab-interactive-dashboard-editor
-    github_id: jupytercalpoly/jupyterlab-interactive-dashboard-editor
-    category: lab-extensions
-    pypi_id: jupyterlab-interactive-dashboard-editor
-  - name: jupyter-tabnine
-    github_id: codota/jupyter-tabnine
-    category: jupyter-extensions
-    pypi_id: jupyter-tabnine
-  - name: xeus-python
-    github_id: jupyter-xeus/xeus-python
-    category: kernels
-    conda_id: conda-forge/xeus-python
-    pypi_id: xeus-python
-  - name: allthekernels
-    github_id: minrk/allthekernels
-    category: kernels
-    conda_id: conda-forge/allthekernels
-    pypi_id: allthekernels
-  - name: jupyterlab-tabular-data-editor
-    github_id: jupytercalpoly/jupyterlab-tabular-data-editor
-    category: lab-renderer
-    pypi_id: jupyterlab-tabular-data-editor
-  - name: jupyterlab_darkside_ui
-    github_id: dunovank/jupyterlab_darkside_ui
-    category: lab-themes
-    pypi_id: jupyterlab_darkside_ui
-  - name: ipycache
-    github_id: rossant/ipycache
-    category: magic
-    conda_id: conda-forge/ipycache
-    pypi_id: ipycache
-  - name: jupyterlite
-    github_id: jtpio/jupyterlite
-    category: notebook-environments
-  - name: mknotebooks
-    github_id: greenape/mknotebooks
-    category: notebook-sharing
-    pypi_id: mknotebooks
-  - name: responsible-ai-widgets
-    github_id: microsoft/responsible-ai-widgets
-    category: widgets
-    pypi_id: raiwidgets
-  - name: nglview
-    github_id: nglviewer/nglview
-    category: widgets
-    conda_id: conda-forge/nglview
-    pypi_id: nglview
-  - name: pigeon
-    github_id: agermanidis/pigeon
-    category: widgets
-    pypi_id: pigeon-jupyter
-  - name: dtale
-    github_id: man-group/dtale
-    category: jupyter-extensions
-    pypi_id: dtale
