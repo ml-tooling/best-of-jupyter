@@ -1438,3 +1438,26 @@ projects:
     homepage: https://github.com/ml-tooling/best-of-ml-python#data-visualization
     resource: True
     category: widgets
+  - name: datapane
+    github_id: datapane/datapane
+    category: data-viz
+    conda_id: conda-forge/datapane
+    pypi_id: datapane
+  - name: notebookJS
+    github_id: jorgehpo/notebookJS
+    category: kernels
+    pypi_id: notebookjs
+    npm_id: notebookjs
+  - name: pidgy
+    github_id: deathbeds/pidgy
+    category: kernels
+    pypi_id: pidgy
+  - name: fastpages
+    github_id: fastai/fastpages
+    category: notebook-tools
+  - name: ipydatagrid
+    github_id: bloomberg/ipydatagrid
+    category: widgets
+    conda_id: conda-forge/ipydatagrid
+    pypi_id: ipydatagrid
+    npm_id: ipydatagrid
