@@ -1461,3 +1461,7 @@ projects:
     conda_id: conda-forge/ipydatagrid
     pypi_id: ipydatagrid
     npm_id: ipydatagrid
+  - name: mercury
+    github_id: mljar/mercury
+    category: notebook-tools
+    pypi_id: mljar-mercury
