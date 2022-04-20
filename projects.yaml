@@ -1465,3 +1465,8 @@ projects:
     github_id: mljar/mercury
     category: notebook-tools
     pypi_id: mljar-mercury
+  - name: StickyLand
+    github_id: xiaohk/stickyland
+    category: lab-extensions
+    pypi_id: jupyterlab-stickyland
+    npm_id: jupyterlab-stickyland
