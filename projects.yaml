@@ -1470,3 +1470,12 @@ projects:
     category: lab-extensions
     pypi_id: jupyterlab-stickyland
     npm_id: jupyterlab-stickyland
+  - name: ipyvizzu
+    github_id: vizzuhq/ipyvizzu
+    category: widgets
+    pypi_id: ipyvizzu
+  - name: jupyverse
+    github_id: jupyter-server/jupyverse
+    category: notebook-environments
+    conda_id: conda-forge/fps-auth
+    pypi_id: jupyverse
