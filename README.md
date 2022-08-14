@@ -3456,6 +3456,7 @@ _Core components of the Jupyter architecture._
 - [**best-of-ml-python**](https://github.com/ml-tooling/best-of-ml-python): A ranked list of awesome machine learning python libraries.
 - [**awesome-jupyter**](https://github.com/markusschanta/awesome-jupyter): A curated list of awesome Jupyter projects, libraries and resources.
 - [**awesome-jupyterlab**](https://github.com/mauhai/awesome-jupyterlab): A curated list of awesome JupyterLab extensions and resources.
+- [**Explore Jupyter**](https://kandi.openweaver.com/explore/jupyter): Discover libraries, packages, source code, cloud functions and APIs.
 
 ## Contribution
 
