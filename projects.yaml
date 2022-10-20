@@ -1479,3 +1479,7 @@ projects:
     category: notebook-environments
     conda_id: conda-forge/fps-auth
     pypi_id: jupyverse
+  - name: .NET Interactive
+    github_id: dotnet/interactive
+    category: kernels
+    license: MIT
