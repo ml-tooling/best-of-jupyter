@@ -1483,3 +1483,7 @@ projects:
     github_id: dotnet/interactive
     category: kernels
     license: MIT
+  - name: xonsh
+    github_id: xonsh/xonsh
+    category: kernels
+    pypi_id: xonsh
