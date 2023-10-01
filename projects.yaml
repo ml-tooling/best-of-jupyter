@@ -286,6 +286,10 @@ projects:
     github_id: catherinedevlin/ipython-sql
     conda_id: conda-forge/ipython-sql
     category: magic
+  - name: Evcxr
+    github_id: evcxr/evcxr
+    category: kernels
+    license: MIT
   - name: Metakernel
     pypi_id: metakernel
     github_id: Calysto/metakernel
