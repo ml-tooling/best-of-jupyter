@@ -1491,3 +1491,8 @@ projects:
     github_id: xonsh/xonsh
     category: kernels
     pypi_id: xonsh
+  - name: nbstata
+    github_id: hugetim/nbstata
+    category: kernels
+    pypi_id: nbstata
+    docs_url: https://hugetim.github.io/nbstata/
