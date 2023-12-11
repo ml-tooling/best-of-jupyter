@@ -290,6 +290,7 @@ projects:
     github_id: evcxr/evcxr
     category: kernels
     license: MIT
+    description: An evaluation context for Rust, including a Jupyter Kernel.
   - name: Metakernel
     pypi_id: metakernel
     github_id: Calysto/metakernel
