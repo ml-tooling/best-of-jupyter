@@ -1492,6 +1492,7 @@ projects:
     github_id: xonsh/xonsh
     category: kernels
     pypi_id: xonsh
+    license: "https://github.com/xonsh/xonsh/blob/main/license"
   - name: nbstata
     github_id: hugetim/nbstata
     category: kernels
