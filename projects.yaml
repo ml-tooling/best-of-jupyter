@@ -1429,11 +1429,6 @@ projects:
     pypi_id: pigeon-jupyter
     github_id: agermanidis/pigeon
     category: widgets
-  - name: dtale
-    pypi_id: dtale
-    github_id: man-group/dtale
-    conda_id: conda-forge/dtale
-    category: jupyter-extensions
   - name: nb_black
     pypi_id: nb_black
     conda_id: conda-forge/nb_black
