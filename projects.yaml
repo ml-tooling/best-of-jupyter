@@ -1493,3 +1493,9 @@ projects:
     category: kernels
     pypi_id: nbstata
     docs_url: https://hugetim.github.io/nbstata/
+  - name: JupyterLab Marketplace
+    github_id: orbrx/jupyter-marketplace
+    category: notebook-tools
+    homepage: https://marketplace.orbrx.io/
+    license: Apache-2.0
+    description: A community-run marketplace for JupyterLab extensions with real-world signals from PyPI and GitHub
