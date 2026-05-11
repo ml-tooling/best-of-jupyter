@@ -29,6 +29,8 @@ This curated list contains 300 awesome open-source projects with a total of 390K
 ---
 
 
+- [PaperClaw](https://github.com/Agnuxo1/PaperClaw) — Jupyter-based Scientific Paper Generation
+
 ## Contents
 
 - [Notebook Environments](#notebook-environments) _16 projects_
