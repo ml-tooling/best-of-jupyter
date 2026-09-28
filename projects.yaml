@@ -207,6 +207,9 @@ projects:
     github_id: jupyter/nbconvert
     conda_id: conda-forge/nbconvert
     category: notebook-sharing
+  - name: ipynbtopdf
+    github_id: wangxiaoxiang5599/ipynbtopdf
+    category: notebook-sharing
   - name: nbinteract
     pypi_id: nbinteract
     github_id: SamLau95/nbinteract
