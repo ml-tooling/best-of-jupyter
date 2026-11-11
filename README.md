@@ -31,6 +31,10 @@ This curated list contains 300 awesome open-source projects with a total of 390K
 
 - [PaperClaw](https://github.com/Agnuxo1/PaperClaw) — Jupyter-based Scientific Paper Generation
 
+<!-- impact-note:start -->
+<sub><strong>Efficiency and practical value.</strong> This fork retains the <a href="https://github.com/ml-tooling/best-of-jupyter">upstream project</a>’s categorised Jupyter ecosystem index, including notebook environments, widgets, sharing tools and deployment components. Developers can compare existing options before writing custom notebook infrastructure, while the documented ranking indicators provide useful maintenance context. Its value lies in discovery and reuse; a ranking score is not a benchmark of runtime efficiency or scientific quality.</sub>
+<!-- impact-note:end -->
+
 ## Contents
 
 - [Notebook Environments](#notebook-environments) _16 projects_
